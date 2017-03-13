@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script>
+      function xhrPost() {
+        var data = {"name":"John", "time":"2pm"};
+        var xhr = new XMLHttpRequest();
+	        
+	xhr.withCredentials = true;
+        xhr.addEventListener("readystatechange", function () {       
+	 if (this.readyState == 4 && this.status == 200) {
+            alert(this.responseText);
+          }
+        });
+	try{
+        xhr.open("GET", "http://localhost:8888/all", true);
+        xhr.send();
+	}catch(e){
+	console.log(e);}
+        //xhr.send(JSON.stringify(data));
+      }
+    </script>
+  </head>
+
+  <body onload="xhrPost()">
+
+  </body>
+</html>

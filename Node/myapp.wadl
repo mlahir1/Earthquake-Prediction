@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application xmlns="http://10.100.16.120:8888">
+    <grammars/>
+    <resources base="http://10.100.16.120:8888/">
+        <resource path="{continentid}">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:int" style="template" name="countryId"/>
+            <method name="GET" id="asia">
+                <response>
+		    <representation element="responseMessage" mediaType="application/json"/>
+                </response>
+            </method>
+            <method name="GET" id="africa">
+                <response>
+		    <representation element="responseMessage" mediaType="application/json"/>
+                </response>
+            </method>
+            <method name="GET" id="australia">
+                <response>
+		    <representation element="responseMessage" mediaType="application/json"/>
+                </response>
+            </method>
+            <method name="GET" id="north_america">
+                <response>
+		    <representation element="responseMessage" mediaType="application/json"/>
+                </response>
+            </method>
+            <method name="GET" id="south_america">
+                <response>
+		    <representation element="responseMessage" mediaType="application/json"/>
+                </response>
+            </method>
+            <method name="GET" id="europ">
+                <response>
+		    <representation element="responseMessage" mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+    </resources>
+</application>
